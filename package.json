@@ -1,6 +1,6 @@
 {
   "name": "gulp-inject-xm",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "inject text to html",
   "main": "index.js",
   "scripts": {
@@ -12,14 +12,13 @@
   },
   "keywords": [
     "gulp",
+	"html",
+	"inject",
     "gulp-inject",
     "gulp-inject-ref"
   ],
   "devDependencies": {
-    "cheerio": "^0.20.0",
-    "path": "^0.12.7",
-    "through2": "^2.0.1",
-    "vinyl-fs": "^2.4.3"
+    "through2": "^2.0.1"
   },
   "author": "tuxming",
   "license": "ISC",

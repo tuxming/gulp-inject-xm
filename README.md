@@ -1,4 +1,4 @@
-# gulp-process-ref [![NPM version][npm-image]][npm-url] [![Build status][travis-image]][travis-url]
+# gulp-inject-xm 
 
 > inject text to html
 
@@ -19,7 +19,7 @@ var process = require('gulp-process-xm');
 
 gulp.task('html', function() {
 	gulp.src('/**/*.html')
-		.pipe(processhtml())
+		.pipe(process())
 		.pipe(gulp.dest(".tmp/"));
 });
 
@@ -89,8 +89,9 @@ var processCallback() = function (info, isDebug){
 
 gulp.task('html', function() {
 	gulp.src('/**/*.html')
-		.pipe(processhtml({
+		.pipe(process({
 			isDebug : false; //product, true: developer
+			callback: processCallback;
 		}))
 		.pipe(gulp.dest(".tmp/"))
 });
@@ -113,7 +114,7 @@ gulp.task('html', function() {
 	<!--endbuild-->
 	
 	<div class="container">
-		//content hear
+		//content here
 	</div>
 	
 	<!--build {"type":"tpl", "ref":"template/footer.html"}-->
@@ -153,7 +154,7 @@ gulp.task('html', function() {
 		<div class="header">this is page head</div>
 		
 		<div class="container">
-			//content hear
+			//content here
 		</div>
 		
 		<!--page footer-->

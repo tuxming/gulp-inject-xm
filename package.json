@@ -1,19 +1,19 @@
 {
-  "name": "gulp-process-ref",
+  "name": "gulp-inject-xm",
   "version": "0.0.1",
-  "description": "concat css, js by html",
+  "description": "inject text to html",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tuxming/gulp-process-ref.git"
+    "url": "git+https://github.com/tuxming/gulp-inject-xm.git"
   },
   "keywords": [
     "gulp",
-    "gulp-process",
-    "gulp-process-ref"
+    "gulp-inject",
+    "gulp-inject-ref"
   ],
   "devDependencies": {
     "cheerio": "^0.20.0",
@@ -24,7 +24,7 @@
   "author": "tuxming",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tuxming/gulp-concat-ref/issues"
+    "url": "https://github.com/tuxming/gulp-inject-xm/issues"
   },
-  "homepage": "https://github.com/tuxming/gulp-concat-ref#readme"
+  "homepage": "https://github.com/tuxming/gulp-inject-xm#readme"
 }

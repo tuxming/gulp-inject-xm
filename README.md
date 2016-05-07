@@ -104,8 +104,8 @@ gulp.task('html', function() {
 	<meta charset="UTF-8">
 	
 	<!-- build {"type":"css", "ref":"styles/main.css"} -->
-    <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+    <link rel="stylesheet" type="text/css" href="../styles/style.css">
     <!-- endbuild -->
 	
 </head>
@@ -144,8 +144,8 @@ gulp.task('html', function() {
 		<meta charset="UTF-8">
 		
 		<!-- build {"type":"css", "ref":"styles/main.css"} -->
-		<link rel="stylesheet" href="../styles/main.css">
-		<link rel="stylesheet" href="../styles/style.css">
+		<link rel="stylesheet" type="text/css" href="../styles/main.css">
+		<link rel="stylesheet" type="text/css" href="../styles/style.css">
 		<!-- endbuild -->
 		
 	</head>

@@ -65,7 +65,7 @@ function processHtmlForString(content, options){
 							if(info.type==='script'){
 								replaceText = '<script type="text/script" src="'+info.ref+'"/>';
 							}else if(info.type==='css')
-								replaceText = '<link type="text/css" href="'+info.ref+'"/>';
+								replaceText = '<link rel="stylesheet" type="text/css" href="'+info.ref+'"/>';
 							else{
 								if(options && options.callback){
 									replaceText = options.callback(info, options.isDebug)

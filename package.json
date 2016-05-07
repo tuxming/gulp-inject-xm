@@ -1,0 +1,30 @@
+{
+  "name": "gulp-process-ref",
+  "version": "0.0.1",
+  "description": "concat css, js by html",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tuxming/gulp-process-ref.git"
+  },
+  "keywords": [
+    "gulp",
+    "gulp-process",
+    "gulp-process-ref"
+  ],
+  "devDependencies": {
+    "cheerio": "^0.20.0",
+    "path": "^0.12.7",
+    "through2": "^2.0.1",
+    "vinyl-fs": "^2.4.3"
+  },
+  "author": "tuxming",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tuxming/gulp-concat-ref/issues"
+  },
+  "homepage": "https://github.com/tuxming/gulp-concat-ref#readme"
+}

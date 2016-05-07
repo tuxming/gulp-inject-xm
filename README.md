@@ -53,6 +53,7 @@ gulp.task('html', function() {
 ### Gulpfile
 ```javascript
 var process = require('gulp-process-xm');
+var fs = require('fs');
 
 var paths = {bowerjs:[
 	'./bower_components/jquery/dist/jquery.js',

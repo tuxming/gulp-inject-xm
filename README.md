@@ -4,7 +4,7 @@
 
 ## Usage
 
-First, install `gulp-process-ref` as a development dependency:
+First, install `gulp-inject-xm` as a development dependency:
 
 ```shell
 npm install --save-dev gulp-inject-xm
@@ -15,11 +15,11 @@ Then, add it to your `gulpfile.js`:
 ## Simple Example
 ### Gulpfile
 ```javascript
-var process = require('gulp-process-xm');
+var inject = require('gulp-inject-xm');
 
 gulp.task('html', function() {
 	gulp.src('/**/*.html')
-		.pipe(process())
+		.pipe(inject.process())
 		.pipe(gulp.dest(".tmp/"));
 });
 
@@ -52,7 +52,7 @@ gulp.task('html', function() {
 ##Expand Example
 ### Gulpfile
 ```javascript
-var process = require('gulp-process-xm');
+var inject = require('gulp-inject-xm');
 var fs = require('fs');
 
 var paths = {bowerjs:[
@@ -90,7 +90,7 @@ var processCallback() = function (info, isDebug){
 
 gulp.task('html', function() {
 	gulp.src('/**/*.html')
-		.pipe(process({
+		.pipe(inject.process({
 			isDebug : false; //product, true: developer
 			callback: processCallback;
 		}))

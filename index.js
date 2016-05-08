@@ -1,6 +1,10 @@
 var through2 = require('through2');
 
-module.exports = function(options){
+var inject = {};
+
+module.exports = inject;
+
+inject.process = function(options){
 	
 	return through2.obj(function (file, enc, done) {
 		
@@ -18,7 +22,7 @@ module.exports = function(options){
 		
 		var content = file.contents.toString();
 		
-		content = processHtmlForString(content, options)
+		content = inject.processHtmlForString(content, options)
 		
 		file.contents = new Buffer(content);
 		this.push(file);
@@ -26,7 +30,7 @@ module.exports = function(options){
 	});
 }
 
-function processHtmlForString(content, options){
+inject.processHtmlForString = function (content, options){
 	
 	//<!-- build {"type": "script", "ref":"style/main.js"} -->
 	//<script src="scripts/app.js"></script>
@@ -65,7 +69,7 @@ function processHtmlForString(content, options){
 							if(info.type==='script'){
 								replaceText = '<script type="text/script" src="'+info.ref+'"/>';
 							}else if(info.type==='css')
-								replaceText = '<link rel="stylesheet" type="text/css" href="'+info.ref+'"/>';
+								replaceText = '<link rel="stylesheet" href="'+info.ref+'"/>';
 							else{
 								if(options && options.callback){
 									replaceText = options.callback(info, options.isDebug)

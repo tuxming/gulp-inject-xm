@@ -1,6 +1,6 @@
 {
   "name": "gulp-inject-xm",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "inject text to html",
   "main": "index.js",
   "scripts": {
